@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.Assert.*;
 
 public class PlayByPlayParserTest {
     @Test
