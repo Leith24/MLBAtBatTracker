@@ -31,6 +31,7 @@ public class GameDayGetter {
     }
     public static URL GetGameInfo(String season, String gameId) throws MalformedURLException {
         URL url = new URL(String.format("https://api.mysportsfeeds.com/v1.1/pull/mlb/%s/game_playbyplay.json?gameid=%s", season, gameId));
+        // url for player gameday stats https://api.mysportsfeeds.com/v1.1/pull/mlb/{season-name}/player_gamelogs.json?player=trea-turner
         return url;
     }
 
