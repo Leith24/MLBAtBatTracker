@@ -5,7 +5,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 public class GameDayGetterTest {
     @Test
@@ -25,7 +24,8 @@ public class GameDayGetterTest {
 
         String season = "2017-regular";
         String gameId = "20170612-TEX-HOU";
+        //String userName =
 
-        assertNotNull(GameDayGetter.getGameDayResponseData(season, gameId));
+        //assertNotNull(GameDayGetter.getGameDayResponseData(season, gameId));
     }
 }

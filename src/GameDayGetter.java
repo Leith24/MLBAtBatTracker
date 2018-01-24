@@ -10,9 +10,9 @@ import java.util.Base64;
 
 public class GameDayGetter {
 
-    public static String getGameDayResponseData(String season, String gameId) throws IOException {
+    public static String getGameDayResponseData(String userName, String password, String season, String gameId) throws IOException {
         URL url = GetGameInfo(season, gameId);
-        String encoding = Base64.getEncoder().encodeToString(("GavinLeith" + ":" + "sc0tland").getBytes());
+        String encoding = Base64.getEncoder().encodeToString((userName + ":" + password).getBytes());
 
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");

@@ -4,6 +4,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String args[]) throws MalformedURLException {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your username:");
+        String userName = scanner.next();
+        System.out.println("Please enter your password");
+        String pass = scanner.next();
         System.out.println("Enter the season you are looking for:");
         String season =  scanner.next();
         String seasonEntry = season + "-regular";
